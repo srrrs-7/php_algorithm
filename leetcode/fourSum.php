@@ -8,10 +8,11 @@
          */
         public function fourSum(array $nums, int $target) {
             sort($nums);
-            var_dump($nums);
+            print_r(implode(", ", $nums));
             return [[1, 3],[2]];
         }
     }
 
     $instance = new FourSum();
-    $instance->fourSum([1, 0, -1, 0, -2, 2], 0);
+    $res = $instance->fourSum([1, 0, -1, 0, -2, 2], 0);
+    print_r($res);
